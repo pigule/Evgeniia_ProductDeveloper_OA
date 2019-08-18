@@ -1,0 +1,25 @@
+{
+  "development": {
+    "username": "opextt",
+    "password": "root",
+    "database": "opextt",
+    "host": "postgres",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "opextt",
+    "password": "root",
+    "database": "opextt",
+    "host": "postgres",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  },
+  "production": {
+    "username": "opextt",
+    "password": "root",
+    "database": "opextt",
+    "host": "postgres",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  }
+}
