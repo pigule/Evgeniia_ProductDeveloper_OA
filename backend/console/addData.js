@@ -20,7 +20,7 @@ let transform = csv.transform(function(data) {
         unitCost: data['Unit Cost'],
         onHandValue: data['On Hand Value']
     }
-    DailyInventory.bulkCreate([resultObj])
+    DailyInventory.create(resultObj)
         .then(function() {
             console.log('Created')
         })
