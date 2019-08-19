@@ -5,8 +5,8 @@ services:
     build: ./backend
     depends_on:
       - postgres
-    volumes:
-      - ./backend:/usr/src/app
+#    volumes:
+#      - ./backend:/usr/src/app
     ports:
       - '8000:3000'
 
@@ -18,15 +18,15 @@ services:
       - POSTGRES_USER=opextt
       - POSTGRES_DB=opextt
       - POSTGRES_PASSWORD=root
-    volumes:
-      - ./data/postgres:/var/lib/postgresql/data
+#    volumes:
+#      - ./data/postgres:/var/lib/postgresql/data
 
   frontend:
     ports:
       - '8080:8080'
-    volumes:
-      - ./frontend:/usr/src/app
-      - '/app/node_modules'
+#    volumes:
+#      - ./frontend:/usr/src/app
+#      - '/app/node_modules'
     build:
       context: ./frontend
 
